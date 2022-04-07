@@ -7,7 +7,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 
-app.get('/chat', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/chat.html');
 });
 
